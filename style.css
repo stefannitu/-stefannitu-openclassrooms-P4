@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,12 +9,13 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* outline: none!important; */
 }
 
 a:hover {
@@ -18,14 +23,14 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
+/* #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+} */
 
 .bloc {
     width: 100%;
@@ -284,7 +289,7 @@ a:hover {
 }
 
 #bloc-2-services p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .navbar {
@@ -461,7 +466,7 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    /* outline: none!important; */
 }
 
 .btn-rd {
@@ -651,7 +656,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -676,9 +681,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 12px;
-}
+/* p {
+    font-size: 14px;
+} */
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -695,7 +700,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 1.0em;
+    /* font-size: 1.0em; */
     font-weight: 700;
 }
 
@@ -705,8 +710,8 @@ p {
 }
 
 h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+    font-size: 30px;
+    line-height: 1.1em;
 }
 
 h3 {
@@ -763,7 +768,7 @@ h4 {
 }
 
 .service-header {
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -781,16 +786,16 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: red;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: orange!important;
     color: #FFFFFF!important;
 }
 
@@ -824,13 +829,64 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/atlanta_blue.webp");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/atlanta_orange.webp");
 }
 
+#form_1 label::after{
+    content:"*Required";
+    font-size: 9px;
+    font-weight: bold;
+    color:blue;    
+}
+
+#bloc-5-cta p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: #fff url(img/pageload-spinner.gif) no-repeat center
+      center;
+    animation: spin 4s linear 0.5s forwards;
+  }
+
+.navbar-brand img{
+   width: 268px;
+   height: 50px;
+}
+
+#bloc-1-hero img{
+    width: 100px;
+    height: 102.5px;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer a:hover{
+    text-decoration: none;
+    color:orange;
+}
+  @keyframes spin {
+    95% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(200%);
+    }
+  }
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -867,32 +923,32 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
+    /* .container {
         width: 100%;
-    }
-    .b-parallax {
+    } */
+    /* .b-parallax {
         background-attachment: scroll;
-    }
-    .page-container,
+    } */
+    /* .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
-    }
-    .bloc {
+    } */
+    /* .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
-    .bloc-group,
+    } */
+    /* .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
+    } */
+    /* .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
 }
 
 @media (max-width: 767px) {
