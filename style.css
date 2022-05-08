@@ -23,14 +23,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* #page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-} */
+
 
 .bloc {
     width: 100%;
@@ -198,10 +191,6 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.d-bloc .panel,
-.l-bloc {
-    color: rgba(0, 0, 0, .5);
-}
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -367,46 +356,7 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
+
 
 .nav > li > .dropdown a {
     background: none!important;
@@ -709,6 +659,11 @@ a {
     margin: auto auto auto auto;
 }
 
+.social svg{
+    height: 30px;
+    color: white;
+}
+
 h2 {
     font-size: 30px;
     line-height: 1.1em;
@@ -782,7 +737,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f28500;
 }
 
 .tc-white {
@@ -790,8 +745,8 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: red;
-    color: #FFFFFF!important;
+    background: #f28500;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -808,11 +763,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #f28500!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #d86130!important;
 }
 
 .icon-dark-slate-blue {
@@ -922,35 +877,46 @@ footer a:hover{
     }
 }
 
-@media (max-width: 991px) {
-    /* .container {
+/* @media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
         width: 100%;
-    } */
-    /* .b-parallax {
-        background-attachment: scroll;
-    } */
-    /* .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
         position: relative;
-    } */
-    /* .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    } */
-    /* .bloc-group,
-    .bloc-group .bloc {
-        display: block;
         width: 100%;
-    } */
-    /* .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    } */
-}
-
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
+} */
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
@@ -1025,7 +991,7 @@ footer a:hover{
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 215px;
     }
     .nav-invert .navbar-header {
         float: none;
